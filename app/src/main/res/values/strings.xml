@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Firefly Ant</string>
+    <string name="edit_message">Who are you?</string>
+    <string name="button_send">Let me Enter!</string>
+    <string name="epic_message">and You are a legend too.</string>
+    <string name="wrong_name">You are wrong</string>
+    <string name="pic_description">vim editor</string>
+</resources>
