@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 
 const val EXTRA_MESSAGE = "com.example.fireflyant.MESSAGE"
 
@@ -12,6 +13,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val placeTextBox = intent.getStringExtra(EXTRA_MESSAGE_PLACE)
+
+        val textView = findViewById<TextView>(R.id.mainActivityPlaceAnswer).apply {
+            text = placeTextBox
+        }
     }
 
     /** Called when the user taps the Send button */

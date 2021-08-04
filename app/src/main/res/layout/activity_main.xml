@@ -21,7 +21,8 @@
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -37,4 +38,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/mainActivityPlaceAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:textColor="#283593"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/where_going" />
 </androidx.constraintlayout.widget.ConstraintLayout>
