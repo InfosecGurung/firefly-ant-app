@@ -14,7 +14,7 @@
         android:autofillHints="testhint"
         android:fontFamily="monospace"
         android:text="@string/epic_message"
-        android:textColor="#651FFF"
+        android:textColor="#4527A0"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

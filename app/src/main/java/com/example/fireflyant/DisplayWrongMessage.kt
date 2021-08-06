@@ -34,4 +34,14 @@ class DisplayWrongMessage : AppCompatActivity() {
         }
         startActivity(placeGoingIntent)
     }
+
+    fun goingNewActivity(view: View) {
+        val editText = findViewById<EditText>(R.id.wrongMessageEditText)
+        val newPlace = editText.text.toString()
+
+        val newActivityGoingIntent = Intent(this, TravelDestination::class.java).apply {
+            putExtra(EXTRA_MESSAGE_PLACE, newPlace)
+        }
+        startActivity(newActivityGoingIntent)
+    }
 }

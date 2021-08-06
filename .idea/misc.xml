@@ -5,7 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.33287037037037037" />
         <entry key="app/src/main/res/layout/activity_display_wrong_message.xml" value="0.67" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_travel_destination.xml" value="0.33287037037037037" />
       </map>
     </option>
   </component>

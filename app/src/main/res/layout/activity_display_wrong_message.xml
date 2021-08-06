@@ -20,9 +20,8 @@
 
     <EditText
         android:id="@+id/wrongMessageEditText"
-        android:layout_width="0dp"
+        android:layout_width="271dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="@string/where_going"
         android:importantForAutofill="no"
@@ -31,24 +30,40 @@
         android:textColor="#5C6BC0"
         android:textColorHighlight="#731B1B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/goingWhereButton"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/goingWhereButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/goingForwardButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#448AFF"
-        android:onClick="goingWhere"
-        android:text="@string/going_button"
-        android:textColor="#212121"
-        app:layout_constraintBaseline_toBaselineOf="@+id/wrongMessageEditText"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:text="@string/going_button_next"
+        android:textColor="#3949AB"
+        android:onClick="goingNewActivity"
+        app:layout_constraintBaseline_toBaselineOf="@+id/goingWhereButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/wrongMessageEditText" />
+        app:layout_constraintStart_toEndOf="@+id/goingWhereButton" />
+
+    <Button
+        android:id="@+id/goingWhereButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#3949AB"
+        android:onClick="goingWhere"
+        android:text="@string/going_button_first"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/goingForwardButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrongMessageEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

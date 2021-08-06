@@ -6,6 +6,7 @@
     <string name="wrong_name">You are wrong</string>
     <string name="pic_description">vim editor</string>
     <string name="where_going">Where are you going?</string>
-    <string name="going_button">First Activity!</string>
+    <string name="going_button_first">First Activity!</string>
     <string name="reached_destination">You have reached your location:</string>
+    <string name="going_button_next">Next Activity!</string>
 </resources>
